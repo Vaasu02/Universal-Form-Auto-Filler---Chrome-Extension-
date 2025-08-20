@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Universal Form Auto-Filler",
+  "version": "1.0",
+  "description": "Universal form auto-filler that works on any website with smart field detection",
+  
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "contextMenus"
+  ],
+  
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Form Auto-Filler"
+  }
+}

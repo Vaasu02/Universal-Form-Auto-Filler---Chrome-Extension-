@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            width: 350px;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: 0;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        h1 {
+            margin: 0 0 20px 0;
+            font-size: 24px;
+            text-align: center;
+            font-weight: 300;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        .status {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+            display: none;
+        }
+        
+        .status.success {
+            background: rgba(46, 204, 113, 0.3);
+            border: 1px solid rgba(46, 204, 113, 0.5);
+        }
+        
+        .status.error {
+            background: rgba(231, 76, 60, 0.3);
+            border: 1px solid rgba(231, 76, 60, 0.5);
+        }
+        
+        .instructions {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+        
+        .step {
+            margin: 8px 0;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .step:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Universal Form Auto-Filler</h1>
+        
+        <div class="instructions">
+            <strong>Works on Any Website:</strong>
+            <div class="step">Fill in your data below</div>
+            <div class="step">Go to any website with a form</div>
+            <div class="step">Click "Auto-Fill Form" button</div>
+            <div class="step">Watch it fill matching fields!</div>
+        </div>
+        
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" placeholder="Enter first name">
+        </div>
+        
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" placeholder="Enter last name">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="Enter email address">
+        </div>
+        
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value="">Select gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="mobile">Mobile Number (10 digits):</label>
+            <input type="tel" id="mobile" placeholder="Enter 10-digit mobile number">
+        </div>
+        
+        <div class="form-group">
+            <label for="dateOfBirth">Date of Birth:</label>
+            <input type="date" id="dateOfBirth">
+        </div>
+        
+        <div class="form-group">
+            <label for="subjects">Subjects:</label>
+            <input type="text" id="subjects" placeholder="Enter subjects (e.g., Math, Physics)">
+        </div>
+        
+        <div class="form-group">
+            <label for="hobbies">Hobbies:</label>
+            <select id="hobbies">
+                <option value="">Select hobby</option>
+                <option value="Sports">Sports</option>
+                <option value="Reading">Reading</option>
+                <option value="Music">Music</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="address">Current Address:</label>
+            <textarea id="address" rows="2" placeholder="Enter current address"></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label for="state">State:</label>
+            <select id="state">
+                <option value="">Select State</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="NCR">NCR</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Rajasthan">Rajasthan</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="city">City:</label>
+            <select id="city">
+                <option value="">Select City</option>
+                <option value="Agra">Agra</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Gurgaon">Gurgaon</option>
+                <option value="Noida">Noida</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Karnal">Karnal</option>
+                <option value="Panipat">Panipat</option>
+            </select>
+        </div>
+        
+        <button id="autoFillBtn">🚀 Auto-Fill Form</button>
+        
+        <div id="status" class="status"></div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
