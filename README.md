@@ -87,7 +87,7 @@ A Chrome extension that demonstrates automated form filling capabilities for web
 
 ## 🌟 Extension Capabilities Demonstrated
 
-This extension showcases the key skills mentioned in the internship requirements:
+This extension showcases the key skills:
 
 ✅ **Chrome Extension (MV3)** - Built with latest manifest version  
 ✅ **DOM Manipulation** - Smart form field detection and filling  
