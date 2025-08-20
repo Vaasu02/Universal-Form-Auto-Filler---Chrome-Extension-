@@ -79,29 +79,6 @@ A Chrome extension that demonstrates automated form filling capabilities for web
 - **Subject Fields**: `select[name*="subject"]`, dropdown handling
 - **Message Fields**: `textarea[name*="message"]`, `textarea[id*="message"]`, etc.
 
-## 🎥 Creating Your Demo Video
-
-### Recording Steps:
-1. **Show the Extension**: Display the popup with your filled data
-2. **Navigate to a Form**: Go to a contact form on any website
-3. **Demonstrate Automation**: Click the auto-fill button
-4. **Show Results**: Highlight the filled fields and success message
-5. **Verify Functionality**: Show that the form is properly filled and ready to submit
-
-### Video Tips:
-- Keep it under 2 minutes
-- Show the extension popup clearly
-- Use a well-known website for credibility
-- Highlight the automation steps clearly
-- Show the visual feedback (green borders, success notification)
-
-## 🔍 Troubleshooting
-
-### If the extension doesn't work:
-1. **Check Developer Mode**: Make sure it's enabled in chrome://extensions/
-2. **Reload Extension**: Click the refresh icon on the extension card
-3. **Check Console**: Open DevTools and look for error messages
-4. **Try Different Sites**: Some sites may have unusual form structures
 
 ### Common Issues:
 - **No Form Found**: Make sure you're on a page with a visible form
@@ -122,13 +99,3 @@ This extension showcases the key skills mentioned in the internship requirements
 ✅ **User Interface** - Beautiful, responsive popup design  
 ✅ **Error Handling** - Graceful fallbacks and user feedback  
 
-## 📞 Next Steps
-
-This demo shows the foundation for more advanced automation features like:
-- LLM integration for natural language commands
-- Site-specific adapters for complex forms
-- Multi-step automation workflows
-- Advanced error handling and recovery
-- Form submission with safety checks
-
-Perfect foundation for the healthcare documentation automation tool described in the internship!
